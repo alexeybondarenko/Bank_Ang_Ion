@@ -1,0 +1,16 @@
+<ion-view title="Cards">
+    <ion-content class="has-header">
+        <ion-refresher on-refresh="refresh()"
+                     pulling-text="Pull to refresh..."
+                     refreshing-text="Refreshing!"
+                     refreshing-icon="ion-loading-c">
+
+        </ion-refresher>
+    <ion-list ng-class="cards">
+        <ion-item ng-repeat="card in cards" class="banking-card" type="item-text-wrap" href="#/tab/card/{{card.id}}">
+            <div class="name">{{card.name}}</div>
+            <div class="balance">{{card.balance}} {{ card.currency |currencySymbol }}</div>
+        </ion-item>
+    </ion-list>
+    </ion-content>
+</ion-view>

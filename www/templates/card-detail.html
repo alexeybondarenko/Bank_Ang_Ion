@@ -1,0 +1,22 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+
+<ion-view title="{{card.name}}">
+    <ion-content padding="true">
+      <ol class="transactions">
+          <li ng-repeat="transaction in transactions" ng-class="{right: {{transaction.balance}} !=0}">
+              <div class="message">
+                  <p class="name">{{transaction.name}}</p>
+                  <i class="balance">{{transaction.balance}}</i>
+              </div>
+              <p class="info">
+                  <i class="date">{{transaction.timestamp | date: 'short'}}</i>
+              </p>
+          </li>
+      </ol>
+    </ion-content>
+</ion-view>

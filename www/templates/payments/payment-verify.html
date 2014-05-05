@@ -1,0 +1,33 @@
+<ion-view title="Payments Verify">
+  <ion-content class="has-header padding">
+      <h3>Enter SMS code</h3>
+      <p>
+          SMS with code on format XXXX has been send on your phone
+      </p>
+
+      <form name="otpForm" ng-submit="submitOtp(otpForm.$valid)" novalidate>
+      <div class="row">
+          <div class="col">
+              <div class="item item-input">
+                  <input type="tel" ng-model="otp[0]" ng-maxlength="1"/>
+              </div>
+          </div>
+          <div class="col">
+              <div class="item item-input">
+                  <input type="tel" ng-model="otp[1]"/>
+              </div>
+          </div>
+          <div class="col">
+              <div class="item item-input">
+                  <input type="tel" ng-model="otp[2]"/>
+              </div>
+          </div>
+          <div class="col">
+              <div class="item item-input">
+                  <input type="tel" ng-model="otp[3]"/>
+              </div>
+          </div>
+      </div>
+      </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,37 @@
+@import "compass";
+
+/**
+    Cards
+**/
+
+$color1: #233386;
+$color2: #13A9A1;
+$color3: #00A9BE;
+$color4: #FFA600;
+$color5: #D6003F;
+
+$gray-color: #e6e5eb;
+
+@import "components/transactions";
+
+.banking-card {
+  .name {
+//    max-width: 65%;
+    display: block;
+    float: left;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+//    padding-right:200px;
+  }
+  .balance {
+    display: balance;
+    float:right;
+    max-width: right;
+    overflow: hidden;;
+    text-overflow: ellipsis;
+
+    //styling
+    font-weight: bold;
+  }
+}

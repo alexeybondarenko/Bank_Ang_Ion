@@ -1,0 +1,104 @@
+/**
+    Cards
+**/
+/* line 5, ../../compass/sass/components/transactions.scss */
+.transactions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 11, ../../compass/sass/components/transactions.scss */
+.transactions li {
+  display: block;
+  float: left;
+  clear: both;
+  max-width: 65%;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+/* line 20, ../../compass/sass/components/transactions.scss */
+.transactions li.right {
+  float: right;
+}
+
+/* line 24, ../../compass/sass/components/transactions.scss */
+.transactions li.right img {
+  float: right;
+}
+
+/* line 28, ../../compass/sass/components/transactions.scss */
+.transactions p.name {
+  border-radius: .75rem;
+  background: #e6e5eb;
+  color: #383641;
+  padding: .6875rem;
+  margin: 0;
+  font-size: .875rem;
+}
+
+/* line 37, ../../compass/sass/components/transactions.scss */
+.transactions li.right p.name {
+  background: #13a9a1;
+  color: #fff;
+}
+
+/* line 43, ../../compass/sass/components/transactions.scss */
+.transactions img {
+  display: block;
+  max-width: 65%;
+  border-radius: .75rem;
+}
+
+/* line 50, ../../compass/sass/components/transactions.scss */
+.transactions li .message {
+  position: relative;
+}
+/* line 53, ../../compass/sass/components/transactions.scss */
+.transactions li .balance {
+  position: absolute;
+  display: block;
+  width: 100px;
+  float: right;
+  left: 100%;
+  padding: 0 .68rem;
+  margin-top: -10px;
+  top: 50%;
+  font-weight: bold;
+  color: red;
+}
+/* line 65, ../../compass/sass/components/transactions.scss */
+.transactions li.right .balance {
+  left: -30%;
+  float: left;
+  color: green;
+}
+/* line 70, ../../compass/sass/components/transactions.scss */
+.transactions li .info {
+  color: #444;
+  padding: .1rem;
+  text-align: center;
+}
+/* line 75, ../../compass/sass/components/transactions.scss */
+.transactions li .info .date {
+  font-size: .68rem;
+}
+
+/* line 18, ../../compass/sass/style.scss */
+.banking-card .name {
+  display: block;
+  float: left;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 27, ../../compass/sass/style.scss */
+.banking-card .balance {
+  display: balance;
+  float: right;
+  max-width: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}

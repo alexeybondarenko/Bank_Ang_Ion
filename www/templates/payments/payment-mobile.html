@@ -1,0 +1,27 @@
+<ion-view title="Payments Mobile">
+  <ion-content class="has-header padding">
+      <form ng-submit="verifyPayment(payment)">
+          <div class="list list-inset">
+              <label class="item item-input item-select">
+                  <div class="input-label">
+                      Choose payment card
+                  </div>
+                  <select ng-model="payment.paymentCard" required ng-options="card.name for card in cards">
+                  </select>
+              </label>
+              <label class="item item-input">
+                  <input type="tel"  ng-model="payment.phoneNumber" ui-mask="(999) 999 99 99" required>
+              </label>
+              <label class="item item-input">
+                  <div class="input-label">
+                      Amount
+                  </div>
+                  <input type="tel"  ng-model="payment.amount" required>
+              </label>
+          </div>
+          <div class="padding">
+              <button type="submit" class="button button-block button-positive">Submit</button>
+          </div>
+      </form>
+  </ion-content>
+</ion-view>
