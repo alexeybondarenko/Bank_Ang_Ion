@@ -1,4 +1,4 @@
-var app = angular.module('Banking', ['ionic', 'Banking.models', 'Banking.controllers', 'Banking.services', 'ui.utils'])
+var app = angular.module('Banking', ['ionic', 'Banking.models', 'Banking.controllers', 'Banking.services', 'Banking.filters', 'ui.utils', 'LocalStorageModule', 'pasvaz.bindonce'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -18,6 +18,11 @@ var app = angular.module('Banking', ['ionic', 'Banking.models', 'Banking.control
     $stateProvider
 
     // setup an abstract state for the tabs directive
+    .state('login', {
+        url: "/login",
+        templateUrl: 'templates/login.html',
+        controller: 'LoginCtrl'
+    })
     .state('tab', {
         url: "/tab",
         abstract: true,
@@ -37,6 +42,15 @@ var app = angular.module('Banking', ['ionic', 'Banking.models', 'Banking.control
         views: {
             'tab-cards': {
                 templateUrl: 'templates/card-detail.html',
+                controller: 'CardDetailCtrl'
+            }
+        }
+    })
+    .state('tab.card-settings', {
+        url: '/card/settings/:cardID',
+        views: {
+            'tab-cards': {
+                templateUrl: 'templates/card-detail-settings.html',
                 controller: 'CardDetailCtrl'
             }
         }
@@ -61,11 +75,65 @@ var app = angular.module('Banking', ['ionic', 'Banking.models', 'Banking.control
             }
         }
     })
+        .state('tab.payment-success', {
+            url: '/payment/success',
+            views: {
+                'tab-payments': {
+                    templateUrl: 'templates/payments/payment-success.html',
+                    controller: 'PaymentsCtrl'
+                }
+            }
+        })
     .state('tab.payment-mobile', {
         url: '/payment/mobile',
         views: {
             'tab-payments': {
                 templateUrl: 'templates/payments/payment-mobile.html',
+                controller: 'PaymentsCtrl'
+            }
+        }
+    })
+    .state('tab.payment-oncard', {
+        url: '/payment/oncard',
+        views: {
+            'tab-payments': {
+                templateUrl: 'templates/payments/payment-oncard.html',
+                controller: 'PaymentsCtrl'
+            }
+        }
+    })
+    .state('tab.payment-onaccount', {
+        url: '/payment/onaccount',
+        views: {
+            'tab-payments': {
+                templateUrl: 'templates/payments/payment-onaccount.html',
+                controller: 'PaymentsCtrl'
+            }
+        }
+    })
+    .state('tab.payment-utilities', {
+        url: '/payment/utilities',
+        views: {
+            'tab-payments': {
+                templateUrl: 'templates/payments/payment-utilities.html',
+                controller: 'PaymentsCtrl'
+            }
+        }
+    })
+    .state('tab.payment-utilities-elec', {
+        url: '/payment/utilities/elec',
+        views: {
+            'tab-payments': {
+                templateUrl: 'templates/payments/utilities/payment-utilities-elec.html',
+                controller: 'PaymentsCtrl'
+            }
+        }
+    })
+    .state('tab.payment-utilities-gas', {
+        url: '/payment/utilities/gas',
+        views: {
+            'tab-payments': {
+                templateUrl: 'templates/payments/utilities/payment-utilities-gas.html',
                 controller: 'PaymentsCtrl'
             }
         }

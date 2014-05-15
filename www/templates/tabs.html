@@ -3,21 +3,28 @@
   Each tab's child <ion-nav-view> directive will have its own 
   navigation history that also transitions its views in and out.
 -->
-<ion-tabs class="tabs-icon-top">
+<ion-nav-bar class="nav-title-slide-ios7 main-navbar">
+    <ion-nav-back-button class="button-icon icon ion-chevron-left">
+    </ion-nav-back-button>
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+</ion-nav-bar>
 
-  <!-- Pets Tab -->
-  <ion-tab title="Cards" icon="icon ion-card" href="#/tab/cards">
-    <ion-nav-view name="tab-cards"></ion-nav-view>
-  </ion-tab>
+<ion-tabs class="tabs-icon-top" ng-controller="TabsCtrl">
+    <!-- Pets Tab -->
+    <ion-tab title="Cards" icon-on="ion-ios7-filing" icon="ion-ios7-filing-outline" href="#/tab/cards">
+        <ion-nav-view name="tab-cards"></ion-nav-view>
+    </ion-tab>
 
-  <!-- Adopt Tab -->
-  <ion-tab title="Payments" icon="icon ion-ios7-cart-outline" href="#/tab/payments">
-    <ion-nav-view name="tab-payments"></ion-nav-view>
-  </ion-tab>
+    <!-- Adopt Tab -->
+    <ion-tab title="Payments"  icon-on="ion-ios7-cart" icon="ion-ios7-cart-outline" href="#/tab/payments" >
+        <ion-nav-view name="tab-payments"></ion-nav-view>
+    </ion-tab>
 
-  <!-- About Tab -->
-  <ion-tab title="Locations" icon="icon ion-ios7-location-outline" href="#/tab/locations">
-    <ion-nav-view name="tab-locations"></ion-nav-view>
-  </ion-tab>
+    <!-- About Tab -->
+    <ion-tab title="Locations" icon-on="ion-ios7-location" icon="ion-ios7-location-outline" href="#/tab/locations">
+        <ion-nav-view name="tab-locations"></ion-nav-view>
+    </ion-tab>
 
 </ion-tabs>

@@ -1,5 +1,7 @@
-<ion-view title="Locations">
-  <ion-content class="has-header padding">
-    <h1>Locations</h1>
-  </ion-content>
+<ion-view title="Locations" id="locations">
+    <ion-content class="has-header" scroll="false">
+        <!--<google-map hello-maps=""></google-map>-->
+        <google-map center='map.center' draggable="true" zoom='map.zoom' bounds='map.bounds'></google-map>
+        <!--<google-map center="map.center" zoom="map.zoom"></google-map>-->
+    </ion-content>
 </ion-view>

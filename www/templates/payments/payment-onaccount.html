@@ -1,0 +1,61 @@
+<ion-view title="Payments On Account">
+  <ion-content class="has-header padding">
+      <form ng-submit="verifyPayment(payment)" class="scroll-fix">
+          <div class="list list-inset ">
+              <div class="item item-divider" ng-show="isTemplate">
+                  {{payment.name}}
+              </div>
+              <label class="item item-input" ng-disabled="isTemplate">
+                  <input type="tel" placeholder="Recipient name"
+                         ng-model="payment.recipientName"
+                         ng-disabled="isTemplate" required>
+              </label>
+              <label class="item item-input" ng-disabled="isTemplate">
+                  <input type="tel" placeholder="Receiver account number"
+                         ng-model="payment.recipientAccountNumber"
+                         ng-disabled="isTemplate" required>
+              </label>
+              <label class="item item-input" ng-disabled="isTemplate">
+                  <input type="tel" placeholder="MFO of the bank"
+                         ng-model="payment.mfoBank"
+                         ng-disabled="isTemplate" required>
+              </label>
+              <label class="item item-input" ng-disabled="isTemplate">
+                  <input type="tel" placeholder="OKPO of the recipient"
+                         ng-model="payment.okpo"
+                         ng-disabled="isTemplate" required>
+              </label>
+              <label class="item item-input" ng-disabled="isTemplate">
+                  <input type="tel" placeholder="Payment details"
+                         ng-model="payment.details"
+                         ng-disabled="isTemplate" required>
+              </label>
+              <br/>
+              <label class="row">
+                  <div class="col-33"></div>
+                  <div class="col-66">
+                      <div class="item item-input input-amount">
+                          <input type="tel"
+                                 ng-model="payment.amount" required />
+                          <span class="input-label">USD</span>
+                      </div>
+                  </div>
+              </label>
+              <br/>
+              <label class="item item-input item-select input-selectcard" >
+                  <div class="input-label">&nbsp;</div>
+                  <select ng-model="payment.paymentCardID">
+                      <option ng-repeat="card in cards" ng-selected="payment.paymentCardID" value="{{card.id}}">{{card.name}} <b>{{card.balance | customCurrency: card.currencySymbol}}</b></option>
+                  </select>
+              </label>
+              <label class="row">
+                  <div class="col-33"></div>
+                  <div class="col-66">
+                      <button type="submit"
+                              class="button button-block  button-form">Next</button>
+                  </div>
+              </label>
+          </div>
+      </form>
+  </ion-content>
+</ion-view>

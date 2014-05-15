@@ -4,25 +4,49 @@
     Cards
 **/
 
-$color1: #233386;
-$color2: #13A9A1;
-$color3: #00A9BE;
+$color1: #882200;
+$color2: #14b35b;
+$color3: #FF8C31;
 $color4: #FFA600;
-$color5: #D6003F;
+$color5: #882200;
+
+$bg-charts: #595959;
 
 $gray-color: #e6e5eb;
 
-@import "components/transactions";
+body {
+  position: absolute;
+}
+//@import "../../scss/ionic.app";
+//@import "components/transactions";
+@import "components/inputs";
 
+.main-navbar {
+//  @include background-image(linear-gradient($color3, red));
+  @include background(linear-gradient($color3, darken($color3,3%) 80%, darken($color3,5%)));
+//  background-color: transparent;
+  &, & .title, .button {color: #fff;}
+}
+
+
+.no-padding {
+  padding: 0 !important;
+}
+.no-padding-side {
+
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.scroll-refresher {
+  top:-55px;
+}
 .banking-card {
   .name {
-//    max-width: 65%;
     display: block;
     float: left;
     max-width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
-//    padding-right:200px;
   }
   .balance {
     display: balance;
@@ -31,7 +55,291 @@ $gray-color: #e6e5eb;
     overflow: hidden;;
     text-overflow: ellipsis;
 
-    //styling
     font-weight: bold;
+  }
+}
+
+$disable-color: #fafafa;
+.item[disabled] {
+  &, & input {background-color: $disable-color;}
+}
+
+#cardDetail {
+  .button-bar {
+    margin-bottom: .64rem;
+    .button {
+      color: $color1;
+      $cardDetails-button-border-radius: .64rem;
+      &:first-child {
+        border-radius: $cardDetails-button-border-radius 0 0 $cardDetails-button-border-radius;
+      }
+      &:last-child {
+        border-radius: 0 $cardDetails-button-border-radius $cardDetails-button-border-radius 0;
+      }
+    }
+  }
+  .bar-subheader {
+
+    .balance {
+      text-align: center;
+      color:$color1;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+}
+%page_bg {
+  background-color: #f9f9f9;
+}
+
+#cards {
+  @extend %page_bg;
+  .scroll {
+    height: 100%;
+  }
+  .shortcutPayments {
+    height: 100%;
+    width:50px;
+    background-color: #333;
+    .shortcut-item {
+      //Align item with card list item
+      padding-top:2px;
+      padding-bottom: 2.5px;
+    }
+  }
+  .row, .col {
+    height: 100%;
+    padding: 0;
+  }
+  .cards-list {
+    padding-left:1px;
+    height: 100%;
+  }
+  .cards-charts {
+    height: 140px;
+//    min-height: 80px;
+//    background-color: #333;
+  }
+}
+.cards-charts {
+  .slider {
+    height: 100%;
+  }
+  .box {
+    height: 100%;
+  }
+  canvas {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#locations {
+
+  .scroll {
+    height: 100%;
+
+  }
+  .angular-google-map {
+    height: 100%;
+    display: block;
+  }
+  .angular-google-map-container { height: 100%; }
+}
+
+.amount {
+  .item {
+
+  }
+}
+.personalAccountBalance {
+  text-align: center;
+  &, .item, h1, h2 {
+    color: $color2;
+  }
+}
+.counter-input-wrap {
+    background-color: #f9f9f9;
+    input {
+      font-style: italic;
+      text-align: center;
+    }
+}
+.counter-input-divider {
+
+  padding: 0 10px;
+  line-height: 40px;
+}
+
+.has-header.has-header-false { top: inherit; }
+.scroll-fix {
+  padding-bottom:30px;
+}
+
+.box {
+  height: 100%;
+}
+
+#payments {
+  .scroll {
+    height: 100%;
+  }
+  .slider {
+    height:100%;
+  }
+  .list .icon {
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+  }
+  .slider-pager {
+    font-size: 12px;
+    opacity: .3;
+  }
+  @extend %page_bg;
+}
+
+.bar-sidemenu {
+  background-color: darken($color3, 10%);
+  color:white;
+}
+
+.item.item-card {
+  padding-top:6px ;
+  padding-bottom:4px ;
+  h2 {
+    margin-bottom: 0;
+  }
+  .balance {
+    color: $color2;
+  }
+}
+
+#cardDetail {
+  .cards-charts {
+    height: 120px;
+    border-bottom:2px solid #ddd;
+    background-color: #2F2F30;
+  }
+  .card-info {
+    position: relative;
+    .card-info-wrap {
+      padding: 10px 25px;
+      position: relative;
+    }
+    .balance {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: left;
+      color:$color2;
+    }
+    .transaction-filter {
+      position: absolute;
+      top:75px;
+    }
+    .title {
+      .icon {
+        font-size:25px;
+        color:#666;
+        margin-right: 5px;
+      }
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 2px;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.transactions-wrap-scroll {
+  background-color: #f9f9f9;
+  max-height: 100%;
+  .scroll {
+//    height: 100%;
+//    padding-bottom: 110px;
+  }
+//  padding-bottom:50px;
+
+  .scroll-infinite-content {
+    bottom:13px !important;
+  }
+}
+
+.transactions {
+  position: relative;
+  display: block;
+  padding: 10px;
+  height: 100%;
+
+  .vertical-line {
+    border-left: 3px solid #e1e1e1;
+
+    position: absolute;
+    left:29px;
+    height: 110%;
+    z-index: 1;
+  }
+  .horizontal-line {
+    border-bottom: 2px solid #e5e5e5;
+    position: absolute;
+    top:20px;
+    width: 30px;
+    z-index: 1;
+  }
+  li.transaction {
+    clear: both;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+
+    .icon-wrap {
+      height: 40px;
+      width: 40px;
+
+      float: left;
+
+      background-color: $color5;
+      border-radius: 100%;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 10px;
+
+      font-size: 20px;
+      color:white;
+    }
+    &.plus {
+      .icon-wrap {
+        background-color: $color2;
+      }
+      .balance {
+        color: $color2 !important;
+      }
+    }
+
+    .message-wrap {
+      position: relative;
+      z-index: 2;
+      background-color: #fff;
+      border:1px solid #f5f5f5;
+      border-radius: 5px;
+      margin-left: 50px;
+      padding: 6px 5px 4px 8px;
+
+      .message {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 300;
+      }
+      .balance {
+//        font-size:18px;
+        font-weight: bold;
+        color:$color5;
+        text-align: left;
+      }
+    }
   }
 }

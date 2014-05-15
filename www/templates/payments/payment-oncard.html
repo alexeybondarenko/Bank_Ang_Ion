@@ -1,12 +1,16 @@
-<ion-view title="Payments Mobile">
+<ion-view title="Payments On Card">
   <ion-content class="has-header padding">
       <form ng-submit="verifyPayment(payment)">
           <div class="list list-inset">
-              <label class="item item-input input-phonenumber" ng-disabled="isTemplate">
-                  <input type="tel"
-                         ng-model="payment.phoneNumber"
-                         ui-mask="+38 ( 999 ) 999 99 99"
-                         ng-disabled="isTemplate" required>
+              <!--<div class="item item-divider">-->
+                  <!--{{payment.name}}-->
+              <!--</div>-->
+              <label class="item item-input input-card" ng-disabled="isTemplate">
+                      <input type="tel"
+                         ng-model="payment.cardNumber"
+                         ui-mask="9999 9999 9999 9999"
+                         ng-disabled="isTemplate"
+                         placeholder="XXXX XXXX XXXX XXXX" value required>
               </label>
               <br/>
               <label class="row">

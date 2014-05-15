@@ -1,4 +1,4 @@
-angular.module('ng').filter('tel', function () {
+angular.module('Banking.filters').filter('tel', function () {
     return function (tel) {
         if (!tel) { return ''; }
 

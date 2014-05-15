@@ -1,6 +1,6 @@
-angular.module('Banking')
+angular.module('Banking.filters',[])
 
-    .filter('currencySymbol', function() {
+.filter('currencySymbol', function() {
     return function(input){
 
         var codesSymbol = {
@@ -122,4 +122,15 @@ angular.module('Banking')
         };
         return codesSymbol[input.toUpperCase()];
     };
-});
+})
+.filter('customCurrency', ["$filter", function ($filter) {
+    return function(amount, currencySymbol){
+        var currency = $filter('currency');
+
+        if(amount < 0){
+            return currency(amount, currencySymbol).replace("(", "-").replace(")", "");
+        }
+
+        return currency(amount, currencySymbol);
+    };
+}]);

@@ -1,14 +1,50 @@
-<ion-view title="Payments">
-  <ion-content class="has-header padding">
-      <div class="list card">
-          <a href="#/tab/payment/mobile" class="item item-icon-left">
-              <i class="icon ion-ios7-telephone-outline"></i>
-              Mobile phone
-          </a>
-          <a href="#" class="item item-icon-left">
-              <i class="icon ion-card"></i>
-              Payment on card
-          </a>
-      </div>
+<ion-view title="Payments" id="payments">
+  <ion-content class="has-header " scroll="false">
+                  <!--<div class=" list card">-->
+                      <!--<a href="#/tab/payment/mobile" ng-click="reset()" class="item item-icon-left">-->
+                          <!--<i class="icon ion-ios7-telephone-outline"></i>-->
+                          <!--Mobile phone-->
+                      <!--</a>-->
+                      <!--<a href="#/tab/payment/oncard" ng-click="reset()" class="item item-icon-left">-->
+                          <!--<i class="icon ion-card"></i>-->
+                          <!--Transfer on card-->
+                      <!--</a>-->
+                      <!--<a href="#/tab/payment/onaccount" ng-click="reset()" class="item item-icon-left">-->
+                          <!--<i class="icon ion-ios7-cart-outline"></i>-->
+                          <!--Transfer on account-->
+                      <!--</a>-->
+                      <!--<a href="#/tab/payment/utilities" ng-click="reset()" class="item item-icon-left">-->
+                          <!--<i class="icon ion-ios7-lightbulb-outline"></i>-->
+                          <!--Utilities-->
+                      <!--</a>-->
+                  <!--</div>-->
+
+                  <!--<div class="list card ">-->
+                      <!--<a ng-repeat="template in templates" class="item" href="#{{template.path}}" ng-click="load(template)">{{template.name}}</a>-->
+                  <!--<div>-->
+              <ion-list>
+                  <ion-item class="item-divider">Payments</ion-item>
+                  <ion-item href="#/tab/payment/mobile" ngTouch="reset()" type="item-icon-left">
+                      <i class="icon ion-ios7-telephone-outline"></i>
+                      Mobile phone
+                  </ion-item>
+                  <ion-item href="#/tab/payment/oncard" ng-click="reset()" type="item-icon-left">
+                      <i class="icon ion-card"></i>
+                      Transfer on card
+                  </ion-item>
+                  <ion-item href="#/tab/payment/onaccount" ng-click="reset()" type="item-icon-left">
+                      <i class="icon ion-ios7-cart-outline"></i>
+                      Transfer on account
+                  </ion-item>
+                  <ion-item href="#/tab/payment/utilities" ng-click="reset()" type="item-icon-left">
+                      <i class="icon ion-ios7-lightbulb-outline"></i>
+                      Utilities
+                  </ion-item>
+                  <ion-item class="item-divider">Templates</ion-item>
+                  <!--<ion-item ng-repeat="card in cards" class="item banking-card" type="item-text-wrap" ng-href="#/tab/card/{{card.id}}">-->
+                  <ion-item ng-repeat="template in templates" option-buttons="buttons" type="item-text-wrap" ng-href="#{{template.path}}"  ng-click="load(template)">
+                      {{template.name}}
+                  </ion-item>
+
   </ion-content>
 </ion-view>

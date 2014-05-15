@@ -1,4 +1,3 @@
-
 /**
  * Модель Transaction - одна банковская операция
  * @constructor

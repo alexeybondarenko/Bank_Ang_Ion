@@ -1,0 +1,63 @@
+form .row {
+  padding: 0;
+}
+
+%input-size {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.input-card, .input-phonenumber {
+  &, input {
+    border-width: 0 0 1px 0;
+    @extend %input-size;
+  }
+  padding: 0;
+}
+.input-amount {
+  &, input, .input-label {
+    border-width:0 0 1px 0;
+    color:$color2;
+    border-color: $color2;
+  }
+  input {
+    @extend %input-size;
+    text-align: right;
+
+    -webkit-flex: 1;
+  }
+  .input-label {
+    width: 40px;
+    text-align: left;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    padding:11px 10px 3px 3px !important;
+  }
+}
+.input-selectcard {
+  .input-label {
+    width: 0px;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+  }
+  select {
+    -webkit-flex: 1;
+    max-width: none;
+    width:100%;
+  }
+}
+.input-otp {
+  &, input {
+    border-width: 0 0 1px 0;
+    @extend %input-size;
+    color:$color2;
+  }
+}
+.button-form {
+  color: $color2 !important;
+  border-color: $color2 !important;
+  font-size: 24px;
+  background-color: #fff !important;
+}

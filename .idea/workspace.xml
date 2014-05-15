@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29b9c0aa-5ba2-4374-af29-5987068a3ae3" name="Default" comment="" />
+    <list default="true" id="29b9c0aa-5ba2-4374-af29-5987068a3ae3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/service/PaymentsService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/card-detail-settings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/card-detail_old.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/filter/cardNumber.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/highcharts-ng/dark.theme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compass/sass/components/inputs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/partials/label-input-paymentAmount.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular.plugins/ng-google-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/payments/payment-onaccount.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/payments/payment-oncard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/payments/payment-success.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/payments/payment-utilities.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/controller/payments-utilities.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compass/.sass-cache/1d43c9f9e60932f3ba72d6ad3bde8e9972111694/style.scssc" afterPath="$PROJECT_DIR$/compass/.sass-cache/1d43c9f9e60932f3ba72d6ad3bde8e9972111694/style.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compass/.sass-cache/810d042add6fa7e614059daf3ab4580c6ceea57b/transactions.scssc" afterPath="$PROJECT_DIR$/compass/.sass-cache/810d042add6fa7e614059daf3ab4580c6ceea57b/transactions.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/model/Card.js" afterPath="$PROJECT_DIR$/www/js/model/Card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/model/Transaction.js" afterPath="$PROJECT_DIR$/www/js/model/Transaction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/card-detail.html" afterPath="$PROJECT_DIR$/www/templates/card-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/filters.js" afterPath="$PROJECT_DIR$/www/js/filters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/models.js" afterPath="$PROJECT_DIR$/www/js/models.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/payments/payment-mobile.html" afterPath="$PROJECT_DIR$/www/templates/payments/payment-mobile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/payments/payment-verify.html" afterPath="$PROJECT_DIR$/www/templates/payments/payment-verify.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controller/payments.js" afterPath="$PROJECT_DIR$/www/js/controller/payments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services.js" afterPath="$PROJECT_DIR$/www/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compass/sass/style.scss" afterPath="$PROJECT_DIR$/compass/sass/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-cards.html" afterPath="$PROJECT_DIR$/www/templates/tab-cards.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-locations.html" afterPath="$PROJECT_DIR$/www/templates/tab-locations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-payments.html" afterPath="$PROJECT_DIR$/www/templates/tab-payments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tabs.html" afterPath="$PROJECT_DIR$/www/templates/tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/filter/tel.js" afterPath="$PROJECT_DIR$/www/js/filter/tel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compass/sass/components/transactions.scss" afterPath="$PROJECT_DIR$/compass/sass/components/transactions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Banking.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,46 +62,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tabs.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/tabs.html">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tab-cards.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/tab-cards.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="44" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tab-payments.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/tab-payments.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="399" selection-end="399" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment-mobile.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/payments/payment-mobile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="36" selection-start="260" selection-end="260" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment-verify.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/payments/payment-verify.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="235" selection-end="244" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="585">
+            <state line="41" column="72" selection-start="2189" selection-end="2189" vertical-scroll-proportion="0.37117904" vertical-offset="360" max-vertical-offset="1725">
               <folding />
             </state>
           </provider>
@@ -71,43 +74,79 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="63" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1395">
+            <state line="18" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2415">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="payments.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/js/controller/payments.js">
+      <file leaf-file-name="card-detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/card-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="204" selection-end="204" vertical-scroll-proportion="0.16877638" vertical-offset="0" max-vertical-offset="711">
+            <state line="43" column="56" selection-start="2518" selection-end="2518" vertical-scroll-proportion="-4.3333335" vertical-offset="541" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filters.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/filters.js">
+      <file leaf-file-name="highcharts-ng.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lib/highcharts-ng.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="4275">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="valid.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/filter/valid.js">
+      <file leaf-file-name="tabs.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/tabs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="8" column="31" selection-start="389" selection-end="389" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/filter/tel.js">
+      <file leaf-file-name="tab-payments.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/tab-payments.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="3" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+            <state line="26" column="32" selection-start="1603" selection-end="1603" vertical-scroll-proportion="-4.46" vertical-offset="167" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tab-cards.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/tab-cards.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="27" selection-start="467" selection-end="467" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="1080">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaymentsService.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/service/PaymentsService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1380">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="501" column="10" selection-start="17198" selection-end="17198" vertical-scroll-proportion="0.0" vertical-offset="6834" max-vertical-offset="8070">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lib/ionic-nightly/js/angular/angular.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312045">
               <folding />
             </state>
           </provider>
@@ -120,40 +159,62 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/www/templates/tab-locations.html" />
-        <option value="$PROJECT_DIR$/www/templates/tabs.html" />
         <option value="$PROJECT_DIR$/compass/config.rb" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
-        <option value="$PROJECT_DIR$/www/js/model/Transaction.js" />
-        <option value="$PROJECT_DIR$/www/js/models.js" />
-        <option value="$PROJECT_DIR$/www/js/filters.js" />
-        <option value="$PROJECT_DIR$/compass/sass/style.scss" />
-        <option value="$PROJECT_DIR$/www/js/services.js" />
-        <option value="$PROJECT_DIR$/www/templates/card-detail.html" />
-        <option value="$PROJECT_DIR$/compass/sass/components/transactions.scss" />
-        <option value="$PROJECT_DIR$/www/templates/tab-payments.html" />
-        <option value="$PROJECT_DIR$/www/js/filter/tel.js" />
         <option value="$PROJECT_DIR$/www/js/filter/valid.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/templates/payments/payment-mobile.html" />
-        <option value="$PROJECT_DIR$/www/templates/tab-cards.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers.js" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
-        <option value="$PROJECT_DIR$/www/templates/payments/payment-verify.html" />
+        <option value="$PROJECT_DIR$/www/js/filter/tel.js" />
+        <option value="$PROJECT_DIR$/www/js/model/Transaction.js" />
+        <option value="$PROJECT_DIR$/www/js/model/Card.js" />
+        <option value="$PROJECT_DIR$/www/js/filters.js" />
+        <option value="$PROJECT_DIR$/compass/sass/components/transactions.scss" />
+        <option value="$PROJECT_DIR$/www/js/service/PaymentsService.js" />
+        <option value="$PROJECT_DIR$/www/templates/payments/payment-success.html" />
+        <option value="$PROJECT_DIR$/www/templates/payments/utilities/payment-utilities-gas.html" />
+        <option value="$PROJECT_DIR$/www/templates/payments/payment-utilities.html" />
+        <option value="$PROJECT_DIR$/www/templates/payments/utilities/payment-utilities-elec.html" />
         <option value="$PROJECT_DIR$/www/js/controller/payments.js" />
+        <option value="$PROJECT_DIR$/www/templates/partials/label-input-paymentAmount.html" />
+        <option value="$PROJECT_DIR$/www/templates/payments/payment-onaccount.html" />
+        <option value="$PROJECT_DIR$/www/templates/payments/login.html" />
+        <option value="$PROJECT_DIR$/www/templates/payments/payment-verify.html" />
+        <option value="$PROJECT_DIR$/www/templates/tab-locations.html" />
+        <option value="$PROJECT_DIR$/www/templates/login.html" />
+        <option value="$PROJECT_DIR$/www/templates/payments/payment-mobile.html" />
+        <option value="$PROJECT_DIR$/www/templates/payments/payment-oncard.html" />
+        <option value="$PROJECT_DIR$/compass/sass/components/inputs.scss" />
+        <option value="$PROJECT_DIR$/www/js/filter/cardNumber.js" />
+        <option value="$PROJECT_DIR$/www/lib/angles/angles.js" />
+        <option value="$PROJECT_DIR$/plugins/org.apache.cordova.console/www/console-via-logger.js" />
+        <option value="$PROJECT_DIR$/www/templates/card-detail_old.html" />
+        <option value="$PROJECT_DIR$/www/js/models.js" />
+        <option value="$PROJECT_DIR$/www/templates/card-detail-settings.html" />
+        <option value="$PROJECT_DIR$/www/lib/jquery.min.js" />
+        <option value="$PROJECT_DIR$/compass/sass/style.scss" />
+        <option value="$PROJECT_DIR$/www/lib/highcharts-ng/dark.theme.js" />
+        <option value="$PROJECT_DIR$/www/templates/tab-payments.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/templates/tabs.html" />
+        <option value="$PROJECT_DIR$/www/templates/tab-cards.html" />
+        <option value="$PROJECT_DIR$/www/js/services.js" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
+        <option value="$PROJECT_DIR$/www/templates/card-detail.html" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
+    <option name="x" value="152" />
     <option name="y" value="22" />
-    <option name="width" value="1197" />
+    <option name="width" value="1258" />
     <option name="height" value="878" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -243,11 +304,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banking" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="payments" />
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bindonce-master" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,119 +366,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Banking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -413,14 +380,25 @@
     <property name="PluginDummyText.Genre" value="latin" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/templates/payments/utilities" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/lib" />
+      <recent name="$PROJECT_DIR$/www/templates" />
+      <recent name="$PROJECT_DIR$/www/lib/angular.plugins" />
+      <recent name="$PROJECT_DIR$/compass/sass" />
       <recent name="$PROJECT_DIR$/www/templates/payments" />
-      <recent name="$PROJECT_DIR$/www/js" />
-      <recent name="$PROJECT_DIR$/compass/sass/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/templates" />
       <recent name="$PROJECT_DIR$/www/js" />
       <recent name="$PROJECT_DIR$/www/lib" />
     </key>
@@ -477,6 +455,23 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="29b9c0aa-5ba2-4374-af29-5987068a3ae3" name="Default" comment="" />
@@ -486,15 +481,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="22" width="1197" height="878" extended-state="0" />
+    <frame x="152" y="22" width="1258" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19320938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -502,10 +496,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -546,180 +541,159 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="720">
+        <state line="23" column="0" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/www/lib/highcharts-ng/dark.theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/ionic/css/ionic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="412" column="9" selection-start="18347" selection-end="18355" vertical-scroll-proportion="0.54464287" vertical-offset="5814" max-vertical-offset="95805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-locations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="88" selection-end="88" vertical-scroll-proportion="0.04366812" vertical-offset="0" max-vertical-offset="687" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compass/config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="169" selection-end="169" vertical-scroll-proportion="0.10932945" vertical-offset="0" max-vertical-offset="686">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/model/Transaction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="78" selection-end="89" vertical-scroll-proportion="0.10548523" vertical-offset="0" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/model/Card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="42" selection-start="2127" selection-end="7059" vertical-scroll-proportion="4.156118" vertical-offset="0" max-vertical-offset="3645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/models.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2145">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compass/sass/components/transactions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="15" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.75982535" vertical-offset="528" max-vertical-offset="1275">
+        <state line="32" column="28" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="3450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/compass/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.2838428" vertical-offset="0" max-vertical-offset="687">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/card-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="64" selection-start="643" selection-end="643" vertical-scroll-proportion="0.2838428" vertical-offset="0" max-vertical-offset="687">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1158" selection-end="1158" vertical-scroll-proportion="-14.625" vertical-offset="99" max-vertical-offset="885">
+        <state line="10" column="16" selection-start="121" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="5220">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/tab-cards.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="330">
+        <state line="27" column="31" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+        <state line="23" column="0" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/filter/valid.js">
+    <entry file="file://$PROJECT_DIR$/compass/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+        <state line="8" column="17" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="5145">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-cards.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="63" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1395">
+        <state line="31" column="65" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="38580">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/filter/tel.js">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="3" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+        <state line="23" column="0" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/tab-payments.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="399" selection-end="399" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
+        <state line="26" column="32" selection-start="1603" selection-end="1603" vertical-scroll-proportion="-4.46" vertical-offset="167" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/payments/payment-mobile.html">
+    <entry file="file://$PROJECT_DIR$/compass/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="260" selection-end="260" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="495">
+        <state line="6" column="16" selection-start="49" selection-end="55" vertical-scroll-proportion="-1.8367347" vertical-offset="0" max-vertical-offset="5250">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/payments/payment-verify.html">
+    <entry file="file://$PROJECT_DIR$/www/lib/highcharts-ng/dark.theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="235" selection-end="244" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="585">
+        <state line="13" column="14" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="3450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="218" selection-end="218" vertical-scroll-proportion="-0.8381089" vertical-offset="660" max-vertical-offset="5385">
+          <folding>
+            <marker date="1400145491000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1400145491000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1400145491000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1400145491000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/service/PaymentsService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="501" column="10" selection-start="17198" selection-end="17198" vertical-scroll-proportion="0.0" vertical-offset="6834" max-vertical-offset="8070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ionic-nightly/js/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312045">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/bindonce-master/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/highcharts-ng.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="4275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/tabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="435">
+        <state line="8" column="31" selection-start="389" selection-end="389" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controller/payments.js">
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="204" selection-end="204" vertical-scroll-proportion="0.16877638" vertical-offset="0" max-vertical-offset="711">
+        <state line="18" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-cards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="27" selection-start="467" selection-end="467" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/card-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="56" selection-start="2518" selection-end="2518" vertical-scroll-proportion="-4.3333335" vertical-offset="541" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="72" selection-start="2189" selection-end="2189" vertical-scroll-proportion="0.37117904" vertical-offset="360" max-vertical-offset="1725">
           <folding />
         </state>
       </provider>

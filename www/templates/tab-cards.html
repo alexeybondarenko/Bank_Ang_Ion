@@ -1,16 +1,66 @@
-<ion-view title="Cards">
-    <ion-content class="has-header">
-        <ion-refresher on-refresh="refresh()"
-                     pulling-text="Pull to refresh..."
-                     refreshing-text="Refreshing!"
-                     refreshing-icon="ion-loading-c">
+<ion-view title="Cards" id="cards">
+    <ion-content class="has-header has-tabs" scroll="false">
+        <div class="cards-charts" drag-content="false">
+            <ion-slide-box show-pager="false">
+                <ion-slide>
+                    <div class="box chart-earningAndCosts">
+                        <highchart id="chart" config="chartConfig.earningAndCost" ></highchart>
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box chart-balance">
+                        <highchart id="chart" config="chartConfig.balance" ></highchart>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+        </div>
+        <ion-scroll class="cards-list">
+            <!--<ion-refresher on-refresh="refresh()"-->
+                           <!--pulling-text="Pull to refresh cards..."-->
+                           <!--refreshing-text="Refreshing!"-->
+                           <!--refreshing-icon="ion-loading-b">-->
+            <!--</ion-refresher>-->
 
-        </ion-refresher>
-    <ion-list ng-class="cards">
-        <ion-item ng-repeat="card in cards" class="banking-card" type="item-text-wrap" href="#/tab/card/{{card.id}}">
-            <div class="name">{{card.name}}</div>
-            <div class="balance">{{card.balance}} {{ card.currency |currencySymbol }}</div>
-        </ion-item>
-    </ion-list>
+            <div class="list">
+                <a class="item item-icon-left item-card" ng-href="#/tab/card/{{card.id}}" ng-repeat="card in cards">
+                    <i class="icon ion-card"></i>
+                    <h2>{{card.name}}</h2>
+                    <p><b class="balance">{{card.balance}} {{card.currencySymbol}}</b> {{card.number | creditCardLastDigits}}</p>
+                </a>
+            </div>
+        </ion-scroll>
+        <!---->
+        <!--<div class="row">-->
+            <!--<div class="cardList col">-->
+                <!--<ion-refresher on-refresh="refresh()"-->
+                               <!--pulling-text="Pull to refresh..."-->
+                               <!--refreshing-text="Refreshing!"-->
+                               <!--refreshing-icon="ion-loading-b">-->
+                <!--</ion-refresher>-->
+                <!--<div class="list">-->
+                    <!--<a class="item item-icon-left item-card" href="#">-->
+                        <!--<i class="icon ion-card"></i>-->
+                        <!--<h2>Gold Card</h2>-->
+                        <!--<p><b class="balance">100.23 $</b> ****1231</p>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<ion-list   show-delete="true"&ndash;&gt;-->
+                            <!--&lt;!&ndash;show-reorder="true"&ndash;&gt;-->
+                            <!--&lt;!&ndash;can-swipe="true">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ion-item ng-repeat="card in cards" class="item banking-card" type="item-icon" ng-href="#/tab/card/{{card.id}}">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="name">{{card.name}}</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="balance">{{card.balance}} {{ card.currency |currencySymbol }}</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;</ion-list>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<div class="card list">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a ng-repeat="card in cards" class="item banking-card" type="item-text-wrap" href="#/tab/card/{{card.id}}">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="name">{{card.name}}</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="balance">{{card.balance}} {{ card.currency |currencySymbol }}</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
     </ion-content>
 </ion-view>

@@ -1,22 +1,83 @@
 <!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
+This template loads for the 'tab.friend-detail' state (app.js)
+'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+The FriendsCtrl pulls data from the Friends service (service.js)
+The Friends service returns an array of friend data
 -->
 
-<ion-view title="{{card.name}}">
-    <ion-content padding="true">
-      <ol class="transactions">
-          <li ng-repeat="transaction in transactions" ng-class="{right: {{transaction.balance}} !=0}">
-              <div class="message">
-                  <p class="name">{{transaction.name}}</p>
-                  <i class="balance">{{transaction.balance}}</i>
-              </div>
-              <p class="info">
-                  <i class="date">{{transaction.timestamp | date: 'short'}}</i>
-              </p>
-          </li>
-      </ol>
+<ion-view title="{{card.name}}" id="cardDetail">
+    <div class="bar bar-subheader">
+        <h1 class="title balance">{{card.balance | currency: card.currencySymbol}}</h1>
+        <button class="button item-button-left icon ion-ios7-search button-clear" ng-click="toggleSearch()"></button>
+        <a class="button item-button-right icon ion-ios7-gear-outline button-clear" ng-href="#/tab/card/settings/{{card.id}}"></a>
+    </div>
+    <ion-content class="has-header has-subheader has-tabs" scroll="false" >
+        <div class="cards-charts">
+            <ion-slide-box show-pager="false">
+                <!--<ion-slide>-->
+
+                    <!--<div class="box card-info">-->
+                        <!--<p class="title"><i class="icon ion-card"></i> {{card.name}}</p>-->
+                        <!--<p class="balance">{{card.balance | currency: card.currencySymbol}}</p>-->
+                        <!--<div class="buttons">-->
+                            <!--<button class="button button-light button-small" href="#/tab/payment/mobile">Payment mobile</button>-->
+                            <!--<button class="button button-light button-small" href="#/tab/payment/mobile">Payment on Card</button>-->
+                            <!--<button class="button button-light button-small" href="#/tab/payment/mobile">Payment utilities</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</ion-slide>-->
+                <ion-slide>
+                    <div class="box chart-earningAndCosts">
+                        <highchart id="chart" config="chartConfig.earningAndCost" ></highchart>
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box chart-balance">
+                        <highchart id="chart" config="chartConfig.balance" ></highchart>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+        </div>
+        <ion-scroll class="transactions-wrap-scroll clearfix" delegate-handle="transactionsScroll">
+            <ion-refresher on-refresh="refresh()"
+                           pulling-text="Pull to refresh transactions..."
+                           refreshing-text="Refreshing!"
+                           refreshing-icon="ion-loading-b">
+            </ion-refresher>
+            <div class="bar bar-header fade item-input-inset transaction-filter" ng-show="visibleSearch">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios7-search placeholder-icon"></i>
+                    <input type="search" ng-model="search.name" placeholder="Search">
+                </label>
+                <button class="button button-clear" ng-click="search = null">
+                    Cancel
+                </button>
+            </div>
+            <div class="clearfix">
+                <ol class="transactions" ng-show="transactions.length > 0">
+                    <i class="vertical-line"></i>
+
+                        <!--<li bindonce ng-repeat="person in Persons">-->
+                            <!--<a bo-href="'#/people/' + person.id"><img bo-src="person.imageUrl"></a>-->
+                            <!--<a bo-href="'#/people/' + person.id" bo-text="person.name"></a>-->
+                            <!--<p bo-class="{'cycled':person.generated}" bo-html="person.description"></p>-->
+                        <!--</li>-->
+
+
+                    <li bindonce ng-repeat="transaction in transactions | filter: search" bo-class="{plus: transaction.balance > 0}" class="transaction clearfix" >
+                        <div class="transaction-wrap">
+                            <div class="icon-wrap">
+                                <i class="icon" bo-class="transaction.typeIcon"></i>
+                            </div>
+                            <i class="horizontal-line"></i>
+                            <div class="message-wrap">
+                                <div class="message" bo-bind="transaction.name"></div>
+                                <div class="balance" bo-bind="transaction.balance | customCurrency:card.currencySymbol"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </ion-scroll>
     </ion-content>
 </ion-view>
